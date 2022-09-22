@@ -1,0 +1,203 @@
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-color: rgb(153, 146, 146);
+        height: 100%;
+        width: 195;
+    }
+    /* Aqui inicia el index*/
+    
+    .seccion1 {
+        height: 650px;
+        width: 100%;
+        background-size: contain;
+        background-size: 100% 94%;
+        background-image: url(/imagenes/banner.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    .seccion1 img {
+        width: 100%;
+        height: 90%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    #menu {
+        width: 99%;
+        background-color: aqua;
+        height: 58px;
+        top: 0;
+        position: fixed;
+        box-shadow: 0 4px 3px rgb(0, 0, .5);
+        display: flex;
+    }
+    
+    #menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-right: 20px;
+    }
+    
+    #menu a {
+        float: right;
+        color: black;
+        padding: 20px 20px;
+        text-decoration: none;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: .2s ease-in-out;
+    }
+    
+    #menu a:hover {
+        background-color: gray;
+    }
+    
+    nav .indicador {
+        height: 7px;
+        background-color: brown;
+        position: absolute;
+        bottom: 0;
+        transition: .3s ease-in-out;
+    }
+    
+    h1 {
+        text-align: center;
+        margin-top: -80px;
+    }
+    
+    p {
+        font-size: 30px;
+        color: black;
+    }
+    
+    .seccion3 {
+        max-width: 100%;
+        margin-top: 200px;
+        font-size: 50px;
+        height: 1020px;
+        background-color: aqua;
+    }
+    
+    .titulo-m {
+        width: 20%;
+    }
+    /*
+.titulo-h {
+
+}
+*/
+    
+    .content-m {
+        padding: 5%;
+        max-width: 25%;
+        min-height: 5%;
+        max-height: 630px;
+        margin-top: -0px;
+        background-color: burlywood;
+        margin-left: 20px;
+    }
+    
+    .content-h {
+        padding: 5%;
+        max-width: 25%;
+        min-height: 5%;
+        max-height: 630px;
+        margin-top: -820px;
+        margin-right: 20px;
+        float: right;
+        background-color: chartreuse;
+    }
+    /*---------------------------------Aqui inicia el Slider---------------------------------------------------------------*/
+    
+    .Slider {
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -45px;
+        height: 700px;
+        overflow: hidden;
+    }
+    
+    .Slider ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: Slide-img 15s infinite alternate ease-in-out;
+    }
+    
+    .Slider li {
+        list-style: none;
+        width: 100%;
+    }
+    
+    .Slider img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    @keyframes Slide-img {
+        0% {
+            margin-left: 0%;
+        }
+        20% {
+            margin-left: 0%;
+        }
+        25% {
+            margin-left: -100%;
+        }
+        45% {
+            margin-left: -100%;
+        }
+        50% {
+            margin-left: -200%;
+        }
+        70% {
+            margin-left: -200%;
+        }
+        75% {
+            margin-left: -300%;
+        }
+        100% {
+            margin-left: -300%;
+        }
+    }
+    /*----------------------------Aqui termina el Slider-------------------------------------------------*/
+    
+    .seccion4 {
+        width: 100%;
+        height: 700px;
+        margin: 0;
+        background-size: contain;
+        background-size: 100% 0%;
+        background-image: url(../imagenes/imagen3.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    .contenedor {
+        width: 100%;
+        height: 200px;
+        margin-top: 85px;
+        background-color: coral;
+    }
+    
+    .seccion5 {
+        width: 100%;
+        height: 700px;
+        background-color: coral;
+    }
+    
+    .seccion6 {
+        width: 100%;
+        height: 700px;
+        background-color: darkred;
+    }
