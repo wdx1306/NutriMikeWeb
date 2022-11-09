@@ -16,6 +16,7 @@ const observer = new IntersectionObserver((entradas, observer) => {
 
             // Creamos un arreglo con las secciones y luego obtenemos el index del la seccion que esta en pantalla.
             indexSeccionActiva = [...secciones].indexOf(entrada.target);
+
             indicador.style.transform = `translateX(${tamanoIdicador * indexSeccionActiva}px)`;
         }
     });

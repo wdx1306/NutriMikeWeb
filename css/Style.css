@@ -1,203 +1,560 @@
-    html {
-        scroll-behavior: smooth;
-    }
-    
-    body {
-        background-color: rgb(153, 146, 146);
-        height: 100%;
-        width: 195;
-    }
-    /* Aqui inicia el index*/
-    
-    .seccion1 {
-        height: 650px;
-        width: 100%;
-        background-size: contain;
-        background-size: 100% 94%;
-        background-image: url(/imagenes/banner.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-    }
-    
-    .seccion1 img {
-        width: 100%;
-        height: 90%;
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-    }
-    
-    #menu {
-        width: 99%;
-        background-color: aqua;
-        height: 58px;
-        top: 0;
-        position: fixed;
-        box-shadow: 0 4px 3px rgb(0, 0, .5);
-        display: flex;
-    }
-    
-    #menu {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        margin-right: 20px;
-    }
-    
-    #menu a {
-        float: right;
-        color: black;
-        padding: 20px 20px;
-        text-decoration: none;
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        transition: .2s ease-in-out;
-    }
-    
-    #menu a:hover {
-        background-color: gray;
-    }
-    
-    nav .indicador {
-        height: 7px;
-        background-color: brown;
-        position: absolute;
-        bottom: 0;
-        transition: .3s ease-in-out;
-    }
-    
-    h1 {
-        text-align: center;
-        margin-top: -80px;
-    }
-    
-    p {
-        font-size: 30px;
-        color: black;
-    }
-    
-    .seccion3 {
-        max-width: 100%;
-        margin-top: 200px;
-        font-size: 50px;
-        height: 1020px;
-        background-color: aqua;
-    }
-    
-    .titulo-m {
-        width: 20%;
-    }
-    /*
-.titulo-h {
-
+:root {
+    --color_primario: rgb(43, 42, 42);
+    --color_text: white;
+    --color-secundario: rgb(185, 184, 184);
 }
-*/
-    
-    .content-m {
-        padding: 5%;
-        max-width: 25%;
-        min-height: 5%;
-        max-height: 630px;
-        margin-top: -0px;
-        background-color: burlywood;
-        margin-left: 20px;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(153, 146, 146);
+    height: 100%;
+    width: 195;
+}
+
+
+/*---------------- Aqui inicia el index---------------------------*/
+
+
+/* ----------------------------Menu--------------------------------*/
+
+#menu {
+    width: 99%;
+    background-color: var(--color_primario);
+    height: 58px;
+    top: 0;
+    position: fixed;
+    display: flex;
+    box-shadow: 0 4px 3px rgb(0, 0, .5);
+    z-index: 2;
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+#menu a {
+    float: right;
+    color: var(--color_text);
+    padding: 20px 20px;
+    text-decoration: none;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .2s ease-in-out;
+}
+
+#menu a:hover {
+    background-color: rgb(218, 209, 209);
+    font-size: 20px;
+}
+
+nav .indicador {
+    height: 7px;
+    background-color: var(--color_text);
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease-in-out;
+}
+
+
+/* ----------------------------Aqui termina el Menu--------------------------------*/
+
+.secciones {
+    position: relative;
+    background-color: rgb(153, 146, 146);
+    height: 100%;
+}
+
+
+/*--------------------------------------Seccion1--------------------*/
+
+.seccion1 {
+    /* Mueve el valor vertical de la primera seccion*/
+    height: 650px;
+    width: 100%;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-image: url(../imagenes/banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.seccion1 img {
+    width: 100%;
+    height: 99%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+/*--------------------------------Aqui termina la seccion1-------------------*/
+
+
+/*-------------------------------Eslogan----------------------------------------*/
+
+.Slogan {
+    margin-top: 2px;
+    border-color: aqua;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    background-color: var(--color_primario);
+}
+
+.titulo-slogan {
+    border-color: aqua;
+    position: absolute;
+    color: var(--color_primario);
+    width: 60%;
+    height: 50px;
+    top: 80px;
+    left: 300px;
+    background-color: var(--color-secundario);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.parrafo-slogan {
+    position: absolute;
+    color: var(--color_text);
+    width: 80%;
+    height: 50px;
+    top: 50px;
+    left: 150px;
+}
+
+p {
+    font-size: 30px;
+    color: var(--color_text);
+}
+
+
+/* ----------------------------Aqui termina el eslogan--------------------------------*/
+
+
+/*----------------------Seccion2--------------------------------*/
+
+.titulo-seccion2 {
+    color: var(--color_text);
+    position: absolute;
+    top: 120px;
+    left: 250px;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.seccion2 {
+    top: 30px;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    margin-top: -29px;
+    font-size: 50px;
+    height: 750px;
+    background-color: var(--color_primario);
+}
+
+.content-m {
+    border-radius: 20px;
+    position: relative;
+    padding: 5%;
+    width: 400px;
+    min-height: 5%;
+    height: 400px;
+    top: 150px;
+    left: 0px;
+    background-color: grey;
+    margin-left: 20px;
+}
+
+.titulo-m {
+    background-color: aqua;
+    border-radius: 10px;
+    position: absolute;
+    color: var(--color_primario);
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    top: -10px;
+    left: 150px;
+}
+
+.content-h {
+    border-radius: 20px;
+    position: relative;
+    padding: 5%;
+    width: 400px;
+    min-height: 5%;
+    height: 400px;
+    top: -382px;
+    left: 0px;
+    margin-right: 20px;
+    float: right;
+    background-color: var(--color-secundario);
+}
+
+.titulo-h {
+    background-color: aqua;
+    border-radius: 10px;
+    position: absolute;
+    color: var(--color_primario);
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    top: -10px;
+    left: 150px;
+}
+
+
+/* ----------------------------Aqui termina la seccion2--------------------------------*/
+
+
+/*---------------------------------Aqui inicia el Slider---------------------------------------------------------------*/
+
+.Slider-h {
+    position: absolute;
+    width: 95%;
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 700px;
+    left: 10px;
+    overflow: hidden;
+}
+
+.Slider-h ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: Slide-img 15s infinite alternate ease-in-out;
+}
+
+.Slider-h li {
+    list-style: none;
+    width: 100%;
+}
+
+.Slider-h img {
+    width: 100%;
+    height: 100%;
+}
+
+.Slider-m {
+    position: absolute;
+    width: 95%;
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 700px;
+    left: 10px;
+    overflow: hidden;
+}
+
+.Slider-m ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: Slide-img 15s infinite alternate ease-in-out;
+}
+
+.Slider-m li {
+    list-style: none;
+    width: 100%;
+}
+
+.Slider-m img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes Slide-img {
+    0% {
+        margin-left: 0%;
     }
-    
-    .content-h {
-        padding: 5%;
-        max-width: 25%;
-        min-height: 5%;
-        max-height: 630px;
-        margin-top: -820px;
-        margin-right: 20px;
-        float: right;
-        background-color: chartreuse;
+    20% {
+        margin-left: 0%;
     }
-    /*---------------------------------Aqui inicia el Slider---------------------------------------------------------------*/
-    
-    .Slider {
-        width: 90%;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: -45px;
-        height: 700px;
-        overflow: hidden;
+    25% {
+        margin-left: -100%;
     }
-    
-    .Slider ul {
-        display: flex;
-        padding: 0;
-        width: 400%;
-        animation: Slide-img 15s infinite alternate ease-in-out;
+    45% {
+        margin-left: -100%;
     }
-    
-    .Slider li {
-        list-style: none;
-        width: 100%;
+    50% {
+        margin-left: -200%;
     }
-    
-    .Slider img {
-        width: 100%;
-        height: 100%;
+    70% {
+        margin-left: -200%;
     }
-    
-    @keyframes Slide-img {
-        0% {
-            margin-left: 0%;
-        }
-        20% {
-            margin-left: 0%;
-        }
-        25% {
-            margin-left: -100%;
-        }
-        45% {
-            margin-left: -100%;
-        }
-        50% {
-            margin-left: -200%;
-        }
-        70% {
-            margin-left: -200%;
-        }
-        75% {
-            margin-left: -300%;
-        }
-        100% {
-            margin-left: -300%;
-        }
+    75% {
+        margin-left: -300%;
     }
-    /*----------------------------Aqui termina el Slider-------------------------------------------------*/
-    
-    .seccion4 {
-        width: 100%;
-        height: 700px;
-        margin: 0;
-        background-size: contain;
-        background-size: 100% 0%;
-        background-image: url(../imagenes/imagen3.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
+    100% {
+        margin-left: -300%;
     }
-    
-    .contenedor {
-        width: 100%;
-        height: 200px;
-        margin-top: 85px;
-        background-color: coral;
-    }
-    
-    .seccion5 {
-        width: 100%;
-        height: 700px;
-        background-color: coral;
-    }
-    
-    .seccion6 {
-        width: 100%;
-        height: 700px;
-        background-color: darkred;
-    }
+}
+
+
+/*----------------------------Aqui termina el Slider-------------------------------------------------*/
+
+
+/*--------------------------------------Seccion3--------------------*/
+
+.seccion3 {
+    top: 30px;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    margin-top: -29px;
+    font-size: 50px;
+    height: 950px;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-image: url(../imagenes/banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.seccion3 img {
+    width: 100%;
+    height: 99%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.titulo-seccion3 {
+    color: var(--color_text);
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.plan {
+    color: var(--color_text);
+    font-size: 30px;
+    position: relative;
+    width: 150px;
+    height: 50px;
+    top: -70px;
+}
+
+.plan-linea {
+    position: absolute;
+    left: 10px;
+    top: 90px;
+    width: 313px;
+    height: 5px;
+    background-color: var(--color-secundario);
+}
+
+.planes {
+    position: absolute;
+    font-size: 15px;
+    top: 100px;
+}
+
+.plan1 {
+    border-radius: 20px;
+    position: absolute;
+    padding: 5%;
+    width: 200px;
+    min-height: 5%;
+    height: 400px;
+    top: 150px;
+    left: 0px;
+    background-color: var(--color_primario);
+    margin-left: 20px;
+}
+
+.plan2 {
+    border-radius: 20px;
+    position: absolute;
+    padding: 5%;
+    width: 200px;
+    min-height: 5%;
+    height: 400px;
+    top: 150px;
+    left: 455px;
+    background-color: var(--color_primario);
+    margin-left: 20px;
+}
+
+.plan3 {
+    border-radius: 20px;
+    position: absolute;
+    padding: 5%;
+    width: 200px;
+    min-height: 5%;
+    height: 400px;
+    top: 150px;
+    left: 940px;
+    background-color: var(--color_primario);
+    margin-left: 20px;
+}
+
+
+/*--------------------------------Aqui termina la seccion3-------------------*/
+
+
+/*----------------------Seccion4--------------------------------*/
+
+.titulo-seccion4 {
+    color: var(--color_text);
+    position: absolute;
+    top: 120px;
+    left: 250px;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.seccion4 {
+    top: 30px;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    margin-top: -29px;
+    font-size: 50px;
+    height: 200px;
+    background-color: var(--color_primario);
+}
+
+
+/* ----------------------------Aqui termina la seccion4--------------------------------*/
+
+
+/*-----------------------------------------Login--------------------------------*/
+
+.login {
+    border-radius: 10%;
+    width: 600px;
+    height: 400px;
+    background-color: var(--color-secundario);
+    position: absolute;
+    top: 150px;
+    left: 400px;
+}
+
+.seccion1-login {
+    position: relative;
+    top: 0;
+    height: 680px;
+    width: 100%;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-image: url(../imagenes/banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.seccion1-login img {
+    width: 100%;
+    height: 90%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.titulo-login {
+    color: var(--color_text);
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.text-login {
+    text-align: center;
+}
+
+.input-container {
+    border-radius: 5%;
+    top: 80px;
+    position: absolute;
+    left: 100px;
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+}
+
+.fallo {
+    position: absolute;
+    top: 200px;
+    width: 300px;
+    height: 10px;
+    font-size: 20px;
+}
+
+.icon-user {
+    max-height: 30px;
+    max-width: 40px;
+    position: absolute;
+    top: 45px;
+    left: 35px
+}
+
+.icon-password {
+    max-height: 30px;
+    max-width: 40px;
+    position: absolute;
+    top: 105px;
+    left: 35px
+}
+
+.input-field-user {
+    position: absolute;
+    left: 80px;
+    width: 300px;
+    height: 20px;
+    top: 46px;
+}
+
+.input-field-password {
+    position: absolute;
+    left: 80px;
+    width: 300px;
+    height: 20px;
+    top: 110px;
+}
+
+.text-user {
+    position: absolute;
+    margin-left: 10px;
+    font-size: 30px;
+    top: -20px;
+}
+
+.button {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 100px;
+    top: 150px;
+}
+
+.button:hover {
+    background-color: rgb(218, 209, 209);
+    font-size: 20px;
+}
+
+.text-password {
+    position: absolute;
+    margin-left: 10px;
+    font-size: 30px;
+    top: 40px;
+}
+
+
+/*----------------------------------Fin Login--------------------------*/
