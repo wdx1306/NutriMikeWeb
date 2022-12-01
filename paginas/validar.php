@@ -1,6 +1,6 @@
 <?php
-    $user=$_POST['usuario'];
-    $user_password=$_POST['password'];
+    $user=$_POST['user'];
+    $user_password=$_POST['contrasena'];
     session_start();
     $_SESSION['usuario']="$user";
 
@@ -10,17 +10,19 @@
     $resultado=mysqli_query($conexion,$sentencia);
 	
     $filas=mysqli_fetch_array($resultado);
- 
+
     if ($filas>0) {
-        $resul=mysqli_fetch_array($resultado);
-        $_SESSION['nombre']=$resul['nombre'];
-if ($resul['id_tipo']=="admin") {
-    
+      
+      
+if ($filas['id_tipo']=="1") {
+
+
+
     
   
   
            header('location:../admin/');
-          } else if ($filas['id_tipo']=="cliente") {
+          } else if ($filas['id_tipo']=="2") {
             header('location:../user/');
           }
         

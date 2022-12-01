@@ -1,13 +1,8 @@
 <?php
-/*
+include_once'database.php';
 session_start();
-if(isset($_SESSION['usuario'])){
-    if($_SESSION['id_tipo']=="admin"){
-        header('location:../admin/');
-    } else if($_SESSION['id_tipo']=="cliente"){
-        header('location:../user/');
-}
-}*/
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,20 +32,20 @@ if(isset($_SESSION['usuario'])){
 
                     <img class="icon-user" src="../imagenes/user.png" alt="User">
 
-                    <input class="input-field-user" type="text" placeholder="Ingresa tu Usuario" name="usuario" id="usuario">
+                    <input class="input-field-user" type="text" placeholder="Ingresa tu Usuario" name="user" id="user" required/>
 
                     <br />
                     <br />
                     <p class="text-password">Password:</p>
                     <img class="icon-password" src="../imagenes/password.png" alt="User">
-                    <input class="input-field-password" type="password" placeholder="Ingresa tu Contraseña" name="password" id="password">
+                    <input class="input-field-password" type="password" placeholder="Ingresa tu Contraseña" name="contrasena" id="contrasena" required/>
                     <br/>
                     <br/>
     
                     <input style="cursor: pointer" class="button" type="submit" name="btn_confirmar" id="selecccion" value="Iniciar Sesion" onclick="" />
 </br>
 </br>
-<div class="fallo"><?php
+<div class="error"><?php
         if(isset($_GET["fallo"]) && ($_GET["fallo"])){
             echo "<div 'top:0px'
             style='color:red'>Usuario o contraseña incorrecta </div>";

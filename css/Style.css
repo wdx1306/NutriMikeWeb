@@ -558,3 +558,101 @@ p {
 
 
 /*----------------------------------Fin Login--------------------------*/
+
+
+/*----------------------------------Inicio Plantilla--------------------------*/
+
+.banner {
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-secundario);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    display: flex;
+    box-shadow: 0 4px 3px rgb(0, 0, .5);
+    z-index: 2;
+}
+
+.conten {
+    position: fixed;
+    width: 91.3%;
+    height: 100%;
+    top: 50px;
+    background-color: aliceblue;
+    left: 133px;
+}
+
+.contenido table {
+    position: absolute;
+    font-size: 30px;
+    left: 15px;
+}
+
+.conten h2 {
+    margin-top: 0%;
+    margin-left: 500px;
+    font-size: 100px;
+    position: fixed;
+}
+
+.contenido {
+    overflow-y: scroll;
+    left: 10%;
+    position: absolute;
+    top: 150px;
+    width: 90%;
+    height: 80%;
+}
+
+.contenido1 {
+    overflow-y: scroll;
+    left: 10%;
+    position: absolute;
+    top: 150px;
+    width: 90%;
+    height: 80%;
+}
+
+.contenido1 .sticky {
+    position: sticky;
+    top: 0;
+    background-color: cyan;
+}
+
+.contenido .sticky {
+    position: sticky;
+    top: 0;
+    background-color: cyan;
+}
+
+.banner2 {
+    width: 10%;
+    height: 93%;
+    background-color: var(--color_primario);
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    position: fixed;
+    box-shadow: 0 4px 3px rgb(0, 0, .5);
+    z-index: 2;
+}
+
+.banner2 a {
+    color: var(--color-secundario);
+    list-style: none;
+    text-decoration: none;
+}
+
+.seccion1-agenda {
+    position: relative;
+    top: 0;
+    height: 680px;
+    width: 100%;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-color: aqua;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
